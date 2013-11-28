@@ -1,0 +1,67 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package grafico;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Laboratorio
+ */
+public class Grafico {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+    String nombre ="";
+    String edad ="";
+    String nacionalidad ="";
+    int opcion =0;
+    
+    
+    do {
+        
+    nombre=JOptionPane.showInputDialog("Como te llamas");
+      
+    edad=JOptionPane.showInputDialog("cuantos años Tienes");    
+        
+    opcion = JOptionPane.showConfirmDialog(null,"Te llamas "+nombre+" y tienes "+edad+" años XD ??");
+    
+    // JOptionPane.showMessageDialog(null, "el valor del dato fue " +opcion);
+    
+    } while (opcion != 0 && opcion != 2);
+    
+        if (opcion != 2) {
+            
+            JOptionPane.showMessageDialog(null, "Datos Guardados");
+        
+        }else{
+            JOptionPane.showMessageDialog(null, "Se cerrara el Programa");
+        }
+            
+        opcion = JOptionPane.showOptionDialog(null, "De donde Eres ?", "Nacionalidad", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, new Object[] {"Mexico","Inglaterra","japon"}, "japon");
+    
+        // JOptionPane.showMessageDialog(null, "el valor del dato fue " +opcion);
+        
+        switch (opcion) {
+            case 0:
+                nacionalidad = "México";
+                break;
+            case 1:
+                nacionalidad = "Inglaterra";
+                break;
+            case 2:
+                nacionalidad = "Japon";
+                
+                break;    
+            default:
+                throw new AssertionError();
+        }
+        
+        JOptionPane.showMessageDialog(null, "Esto Fue un Ejemplo donde supe que tienes "+edad+" años, te llamas "+nombre+" y eres de "+nacionalidad);
+    
+    }
+}

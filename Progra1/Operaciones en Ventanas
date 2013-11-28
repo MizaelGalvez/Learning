@@ -1,0 +1,88 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package graficooperaciones;
+import javax.swing.JOptionPane;
+
+
+/**
+ *
+ * @author Laboratorio
+ */
+public class GraficoOperaciones {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    
+    int opcion=0;
+    String a="";
+    String b="";
+    double base=0;
+    double altura=0;
+    double resultado=0;
+    
+        
+        do {
+            
+            JOptionPane.showMessageDialog(null, "Bienvenido al OPERADOR");
+            
+            opcion = JOptionPane.showOptionDialog(null, "Que Operacion Desea Raalizar ?", "Opcion A realizar", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, new Object[] {"SALIR","cuadrado","Triangulo","Circulo"}, "SALIR");
+    
+            //JOptionPane.showMessageDialog(null, "El valor del boton es "+ opcion);
+            
+            switch (opcion) {
+                case 1:
+                    a=JOptionPane.showInputDialog("Introduce la base");
+                    b=JOptionPane.showInputDialog("introduce la altura");
+                    
+                    base = Integer.valueOf(a);
+                    altura = Integer.valueOf(b);
+                    resultado = base * altura;
+                    
+                    JOptionPane.showMessageDialog(null, "El area del cuadrado es : "+ resultado);
+            
+                    
+                    break;
+                case 2:
+                    a=JOptionPane.showInputDialog("Introduce la base");
+                    b=JOptionPane.showInputDialog("introduce la altura");
+                    
+                    base = Integer.valueOf(a);
+                    altura = Integer.valueOf(b);
+                    resultado = base * altura/2;
+                    
+                    JOptionPane.showMessageDialog(null, "El area del triangulo es : "+ resultado);
+                    
+                    
+                    break;
+                case 3:
+                    a=JOptionPane.showInputDialog("Introduce el RADIO");
+                    
+                    base = Integer.valueOf(a);
+                    resultado =(3.14 * (base*base))/2;
+                    
+                    JOptionPane.showMessageDialog(null, "El area del Circulo es : "+ resultado);
+                    
+                    break;
+                case 0:
+                    break;
+                default:
+                    throw new AssertionError();
+            }
+           
+            opcion = JOptionPane.showOptionDialog(null, "Que desea Hacer ?", "Opcion de salida", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, new Object[] {"SALIR","CONTINUAR"}, "SALIR");
+    
+            
+        } while (opcion != 0);
+        
+    
+    
+    }
+    
+    
+    
+}

@@ -1,0 +1,85 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package array.bidimencional;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Laboratorio
+ */
+public class ArrayBidimencional {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        
+       double promedio=0; 
+       double suma=0;
+    double calificacion [][] = new double [3][3];
+    Scanner lector = new Scanner(System.in);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        for (int i = 0; i < calificacion.length; i++) {
+            
+            // simple traspaso de
+            
+            for (int j = 0; j < calificacion.length; j++) {
+            
+                System.out.println("introduce califocaion de la " + (i+1) +" materia y del alumno "+(j+1)+" :");
+                
+                calificacion[i][j]= lector.nextDouble();
+            
+            }
+            
+        }    
+    
+        for (int i = 0; i < 10; i++) {
+            System.out.println("");
+        }
+        System.out.println("*************************calificaciones impresas******************");
+         
+        
+        System.out.println("A/C   1      2      3     Promedio");
+            for (int i = 0; i < calificacion.length; i++) {
+            
+                System.out.print( i+1 + "    ");
+                
+                    //reseteando suma para que no se siga sumando jajaja
+                     suma=0;
+            
+                     for (int j = 0; j < calificacion.length; j++) {
+            
+                       System.out.print( calificacion[i][j] +"    " );
+                       
+                    //sumando loas calificaciones por alumno ----> horizontalmente, para poder sacar el Promedio del alumno
+                       suma=calificacion[i][j]+suma;
+                       
+          
+            
+            } 
+                    //sacando el Promedio sumado e imprimiendolo en la misma linea anterior 
+                    promedio=suma/3;
+                    System.out.println("  "+promedio);
+                    
+                    //imprimiendo una linea para que salte al siguiente renglon.
+                    System.out.println("");  
+        }
+    
+    
+    }
+}

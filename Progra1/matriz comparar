@@ -1,0 +1,87 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package matriz02;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Laboratorio
+ */
+public class Matriz02 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        String a ="Si";
+     int primero [][] = new int [3][5];
+     int segundo [][] = new int [3][5];
+     Scanner lector = new Scanner (System.in);
+ 
+     
+     
+        for (int i = 0; i < 3; i++) {
+            //ingresandole el valor a la primera matriz por renglon
+            for (int j = 0; j < 5; j++) {
+                System.out.println("introduce el numero "+(j+1));
+                primero[i][j]=lector.nextInt();
+                
+            }
+        }
+          for (int i = 0; i < 3; i++) {
+            //ingresandole el valor a la segunda matriz por renglon
+            for (int j = 0; j < 5; j++) {
+                System.out.println("introduce el numero "+(j+1));
+                segundo[i][j]=lector.nextInt();
+                
+            }
+        }
+            
+            System.out.println("*************************Primer arreglo******************");
+        
+        for (int i = 0; i < 3; i++) {
+            
+            for (int j = 0; j < 5; j++) {
+                //imprimiendo la matriz por renglon
+                 System.out.print( primero[i][j] +"    " );
+                
+            }
+            
+            System.out.println("");  
+        }
+        
+          System.out.println("*************************Segundo arreglo******************");
+        
+        for (int i = 0; i < 3; i++) {
+            
+            for (int j = 0; j < 5; j++) {
+                //imprimiendo la matriz por renglon
+                 System.out.print( segundo[i][j] +"    " );
+                
+            }
+            
+            System.out.println("");  
+        }
+            
+        // despues de aqui se realiza la comparacion
+    
+        
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (primero[i][j]== segundo[i][j]) {
+                    
+                }else{
+                 a="no";
+                }
+            }
+        }
+    
+        
+        //se imprime si son iguales o diferentes
+        System.out.println("loas matrices son iguales :" +a);
+        
+    }
+}

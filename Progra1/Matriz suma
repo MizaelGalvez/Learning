@@ -1,0 +1,81 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package matriz3;
+import java.util.Scanner;
+/**
+ *
+ * @author Laboratorio
+ */
+public class Matriz3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    
+    int suma=0;
+    int matriz [][] = new int [4][5];
+    Scanner lector = new Scanner (System.in);
+ 
+        for (int i = 0; i < 4; i++) {
+            //ingresandole el valor a la matriz por renglon
+            for (int j = 0; j < 5; j++) {
+                System.out.println("introduce el numero "+(j+1));
+                matriz[i][j]=lector.nextInt();
+                
+            }
+            
+        }
+        
+        
+        for (int i = 0; i < 3; i++) {
+            
+                System.out.print( i+1 + "    ");
+                
+                    //reseteando suma para que no se siga sumando jajaja
+                     suma=0;
+            
+                     for (int j = 0; j < 5; j++) {
+            
+                       System.out.print( matriz[i][j] +"    " );
+                       
+                    //sumando los renglones
+                       suma=matriz[i][j]+suma;
+             
+            } 
+                  
+                    System.out.println("  "+suma);
+                    
+                    //imprimiendo una linea para que salte al siguiente renglon.
+                    System.out.println("");  
+    
+    
+        }
+
+         for (int j = 0; j < 5; j++) {
+            
+                
+                
+                    //reseteando suma para que no se siga sumando jajaja
+                     suma=0;
+            
+                     for (int i = 0; i < 3; i++) {
+                 
+                    //sumando las columnas
+                       suma=matriz[i][j]+suma;
+             
+                     } 
+                  
+                    System.out.print("       "+suma);
+             
+    
+    
+       }
+
+
+
+       }
+     }

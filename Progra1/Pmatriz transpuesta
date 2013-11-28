@@ -1,0 +1,60 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package matriz012121;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Laboratorio
+ */
+public class Matriz012121 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+  
+ int calificacion [][] = new int [4][5];
+ Scanner lector = new Scanner (System.in);
+ 
+        for (int i = 0; i < 4; i++) {
+            //ingresandole el valor a la matriz por renglon
+            for (int j = 0; j < 5; j++) {
+                System.out.println("introduce el numero "+(j+1));
+                calificacion[i][j]=lector.nextInt();
+                
+            }
+            
+        }
+       
+        System.out.println("*************************Numeros impresos******************");
+        
+        for (int i = 0; i < 4; i++) {
+            
+            for (int j = 0; j < 5; j++) {
+                //imprimiendo la matriz por renglon
+                 System.out.print( calificacion[i][j] +"    " );
+                
+            }
+            
+            System.out.println("");  
+        }
+        
+        System.out.println("*************************Numeros impresos******************");
+        
+        for (int i = 0; i < 5; i++) {
+            //imprimiendo la matriz por columna, se utilizo para imprimirlo en otra direccion
+            for (int j = 0; j < 4; j++) {
+                
+                 System.out.print( calificacion[j][i] +"    " );
+                
+            }
+            
+            System.out.println("");  
+        }
+        //eso es todo
+    }
+}
