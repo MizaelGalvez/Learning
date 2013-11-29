@@ -1,0 +1,12 @@
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\bin\Debug\Ahora Si Checador.exe.config
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\bin\Debug\Ahora Si Checador.exe
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\bin\Debug\Ahora Si Checador.pdb
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\bin\Debug\Ahora Si Checador.xml
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\obj\Debug\Ahora_Si_Checador.admin.resources
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\obj\Debug\Ahora_Si_Checador.Form1.resources
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\obj\Debug\Ahora_Si_Checador.Resources.resources
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\obj\Debug\Ahora_Si_Checador.registro.resources
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\obj\Debug\Ahora Si Checador.vbproj.GenerateResource.Cache
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\obj\Debug\Ahora Si Checador.exe
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\obj\Debug\Ahora Si Checador.xml
+c:\users\mizael\documents\visual studio 2012\Projects\Ahora Si Checador\Ahora Si Checador\obj\Debug\Ahora Si Checador.pdb
