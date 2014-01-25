@@ -1,0 +1,55 @@
+
+//////////////////////////////////////////////////////////////////////
+
+arreglo[n]
+a =0;
+b =0;
+resultado  = false
+
+while n < arreglo[].length do
+	a = arreglo[n]
+	b = arreglo[n+1]
+	if(a<=b)then
+		resultado = true
+	else
+		resultado = false
+		break
+
+return resultado
+
+//////////////////////////////////////////////////////////////////////
+
+Arr1[],n, Arr2[],m
+
+a=0;
+b=0;
+i=1;
+Arr3[n+m]
+
+WHILE i < Arr3.length DO
+	
+	if arr1{a} < arr2[b] then
+		arr3[a] = arr1[a]
+		a ++
+	else 
+		if arr1{a} < arr2[b] then
+			arr3[a] = arr1[b]
+		 	b ++
+
+
+///////////////////////////////////////////////////////////////////////
+
+
+duplicados = false
+i = 0
+j = 0
+while i < n do
+	while j < n do
+
+		if A1[j] == A1 [i]  then
+		dublicados = true
+		Break
+	j++
+i++
+
+///////////////////////////////////////////////////////////////////////
